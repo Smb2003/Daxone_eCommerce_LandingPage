@@ -1,0 +1,231 @@
+body{
+  padding: 8px;
+  margin: 5px;
+}
+.Navbar{
+  width: 100%;
+  min-height: 100px;
+  /* padding: 8px; */
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.list_Items{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 45px;
+  font-weight: 500;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+.list_Items>li:hover{
+  color: orangered;
+}
+
+.HeroMain{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 500px;
+  background-image: url('/src/assets/Images/hm1-bg-1.jpg ');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.HeroMainImage{
+  width: 50%;
+  min-height:500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.HeroMainImage>img{
+  height: 80vh;
+  margin: 15px;
+}
+.MainHeroContent{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+  min-height:500px;
+  
+}
+.MainContent>h1{
+  font-size: 45px;
+  font-weight:bolder;
+}
+.MainContent>p{
+  font-size: large;
+  font-weight: 600;
+}
+.MainContent>h2{
+  font-size: 36px;
+  font-family: cursive;
+  color: orangered;
+  font-style: italic;
+}
+.Button{
+  min-width: 130px;
+  min-height: 45px;
+  color: orangered;
+  border-color:orangered;
+  font-weight: 600;
+  opacity: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 25px;
+  background: linear-gradient(to right, orangered 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.Button:hover{
+  color: white;
+  /* border-color: black; */
+  background-position: left bottom;
+}
+
+.SellingItems,.allProducts{
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: aqua; */
+  padding: 15px;
+  margin-top: 10px;
+}
+.CartItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  /* width: 100%; */
+  min-height: 200px;
+  /* background-color: brown; */
+}
+.Carts{
+  min-width: 200px;
+  min-height: 300px;
+  text-align: left;
+  padding: 8px;
+  margin: 10px;
+  /* box-shadow:  2px 2px 4px  ; */
+  cursor: pointer;
+}
+.Carts:hover{
+  box-shadow: 2px 2px 10px ;
+}
+.Banner{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  min-height: 300px;
+  background-image: url('./assets/Images/banner-bg-1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  
+
+}
+.Bannner_Content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center ;
+}
+.Bannner_Content>h1{
+  font-size: 40px;
+  color: sienna ;
+  margin-top: -20px;
+  margin-left: 550px;
+}
+.Discount_Img{
+  min-height: 400px;
+  width: 50%;
+  background-image: url('/src/assets/Images/banner-1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Footer{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightslategrey;
+  min-height:300px ;
+}
+.Footer_Items{
+  list-style-type: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+  .Navbar{
+    align-items: center;
+  }
+  .list_Items{
+    flex-grow: inherit;
+    flex-wrap: wrap;
+    align-items: center;
+    display: none;
+  }
+.HeroMain{
+  flex-direction: column-reverse;
+  align-items: center;
+
+}
+.HeroMainImage{
+  min-height: 200px;
+}
+
+.HeroMainImage>img{
+  height: 44vh;
+  margin-right: 75px;
+  /* background-color: black; */
+}
+.CartItems{
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Bannner_Content>h1{
+  font-size: 23px;
+  margin-top: -20px;
+  margin-left: 45px;
+}
+.Discount_Img{
+  width: 100%;
+}
+.Footer{
+  flex-direction: column;
+  padding-top: 40px;
+
+}
+.Footer_Items{
+  margin-top: 30px;
+  text-align: center;
+}
+
+}
+
