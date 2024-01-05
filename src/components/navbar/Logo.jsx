@@ -1,7 +1,9 @@
+import logo from '../../assets/images/logo-1.png';
+
 const Logo = () =>{
     return(
         <div>
-            <img src="/src/assets/Images/logo-1.png" alt="logo" />
+            <img src={logo} alt="logo" />
         </div>
     )
 };
